@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Absolute em relação a página */
+.container{
+    margin-top: 20vh;
+    width: 400px;
+    height: 400px;
+    background: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: greenyellow;
+
+    position: absolute;
+    left: 450px;
+    top: 40px;
+}
+
+/* Absolute em relação a tag pai */
+.content{
+    position: relative;
+    margin-top: 5vh;
+    width: 400px;
+    height: 400px;
+    background: blue;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background: greenyellow;
+
+    position: absolute;
+    left: 450px;
+    top: 40px;
+}

@@ -1,0 +1,31 @@
+Distâncias absolutas <length>
+
+    São fixas e não alteram seu valor.
+
+    | Unidade  | Nome                | Equivalência         |
+    |----------|---------------------|----------------------|
+    | cm       | Centímetros         | 1cm = 96px/2.54      |
+    | in       | Inches (polegadas)  | 1in = 2.54cm = 96px  |
+    | px       | Pixels              | 1px = 1/96th of 1in  |
+    *o mais comum e mais utilizado é o px
+
+    *não é recomendado usar cm
+
+Distâncias relativas
+São relativas a um outro valor, pode ser o elemento pai, ou root(arquivo fonte HTML), ou o tamanho da tela.
+
+    Benefício: Maior adaptação aos diferentes tipos de tela.
+
+    | Unidade  | Relativo a                                    |
+    |----------|-----------------------------------------------|
+    | em       | Tamanho da font do elemento pai               |
+    | rem      | Tamanho da font do elemento raiz (root/html)  |
+    | vw       | 1% da viewport wid                            |
+    | vh       | 1% da viewport height                         |
+
+
+        em: Se o pai tem por exemplo, 24px e coloco 2em para a tag filha, essa tag filha ficará com 48px.
+
+        rem: Quando determino rem, eu indico que ela deve basear o seu tamanho de acordo com o Tamanho da font do elemento raiz (root/html), que por padrão é 16px, mas eu posso alterar o meu root/html no css e determina um tamanho padrão que será usado como base no meu rem.
+
+        vw e vh: A cada 1vw ou 1vh, estou pegando 1% da minha tela total que é mostrada, ou seja, essa unidade de medida é uma parte do meu todo. Então a minha tela que está sendo mostrada "Independente do tamanho", vale 100% e quando indico 1vw ou 1vh,estou pegando uma parte de 100.

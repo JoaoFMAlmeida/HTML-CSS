@@ -1,0 +1,7 @@
+Por padrão o navegador vai ter como referência para o tamanho da caixa, o content-box(conteúdo da caixa) e vai somar com os outros boxes.
+
+Quando determinamos um width (largura) para a caixa e depois um padding (preenchimento interno), a caixa não ficará com o tamanho do widht, o navegador irá somar o width+padding, pois, o conteúdo é a referência, então apenas ele seguirá a largura que determinei.
+
+Usar o propriedade "box-sizing: border-box" para que o navegador entenda que a minha width será de uma borda a outra da caixa, tirando o conteúdo como a referência de tamanho da caixa.
+
+Normalmente deve-se usar essa propriedade no reset de padrões "\*"

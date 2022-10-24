@@ -1,0 +1,44 @@
+## Cores
+
+Usamos CSS para alterar cores do nosso documento.
+
+## Tipos
+
+* background-color (para caixas)
+
+* color (para textos)
+
+* border-color (para bordas das caixas)
+
+* outros
+
+## Valores
+
+Podemos definir valores por:
+
+* palavra-chave (blue, transparent)
+
+* hexadecimal (#990011)
+
+* funções: rgb, rgba, hsl, hsla
+
+
+
+## Aprendendo sobre os valores
+
+* Hexadecimal: Seu valores vão de 0-9 e A-F
+```CSS
+element {
+    color: #090; /* Trabalho (RED, GREEN, BLUE) */
+    color: #090a; /* Trabalhando com mais de 3, temos: (RED, GREEN, BLUE e ALFA(transparência)) */
+    color: #009900;
+    color: #009900aa;
+}
+```
+
+* RGB (RED,GREEN,BLUE): Os valores vão de 0-255; após os 3 primeiros o 4º elemento será o alfa.
+
+```CSS
+element {
+    color: rgb(34, 12, 64, 0.6);
+}

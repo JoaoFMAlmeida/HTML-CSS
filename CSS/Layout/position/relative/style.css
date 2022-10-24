@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background: blue;
+    
+}
+
+.box{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background: greenyellow;
+    position: relative;
+    left: 700px;
+    top: 500px;
+
+    
+}
+
+.content1{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background: green;
+}
+
+.content2{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background: orange;
+}

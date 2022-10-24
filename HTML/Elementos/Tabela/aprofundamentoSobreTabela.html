@@ -1,0 +1,223 @@
+<h2 style="text-align: center;">
+    TABELA SIMPLES
+</h2> <br>
+
+<table>
+    <tr>
+        <th>
+            Nome
+        </th>
+
+        <th>
+            Idade
+        </th>
+    </tr>
+
+    <tr>
+        <td>João</td>
+        <td>21</td>
+    </tr>
+
+    <tr>
+        <td>Carol</td>
+        <td>22</td>
+    </tr>
+</table> <br> <br> <br> <br> <br> <br>
+
+
+<!-- MELHORANDO A ORGANIZAÇÃO DA TABELA -->
+
+<!-- Colocaremos o nosso cabeçalho, na tag "<thead></thead>"" e o 
+    nosso corpo no "<tbody></tbody>"" e criaremos o rodapé usando "<tfoot></tfoot>" 
+    colocando nele os dados total.
+
+    Iremos também colocar a tag "<caption></caption>" para descrever sobre o que a nossa 
+    tabela trata. -->
+
+
+<table>
+
+    <caption>Pessoas por Idade</caption>
+
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+
+            <th>
+                Idade
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>João</td>
+            <td>21</td>
+        </tr>
+
+        <tr>
+            <td>Carol</td>
+            <td>22</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+</table> <br> <br> <br> <br>
+
+
+
+
+<!-- TABELA COMPLEXA -->
+
+<!-- Faremos uma tabela que contém 2 lojas, 
+        onde estaremos vendo quantos produtos foram vendidos e produzidos 
+        e agruparemos por nome dos produtos. Utilizamos o atributo "rowspan"
+        para que seja ocupado mais de uma linha e o "colspan" para colunas.-->
+
+
+<h2 style="text-align: center;">
+    TABELA COMPLEXA
+</h2> <br> <br>
+
+<table>
+
+    <caption>Produtos Produzidos x Vendidos por loja</caption>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Loja A</th>
+            <th colspan="2">Loja B</th>
+        </tr>
+
+        <tr>
+            <th>Produzido</th>
+            <th>Vendido</th>
+            <th>Produzido</th>
+            <th>Vendido</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Vassoura</th>
+            <td>50</td>
+            <td>40</td>
+            <td>60</td>
+            <td>50</td>
+        </tr>
+
+        <tr>
+            <th>Balde</th>
+            <td>30</td>
+            <td>25</td>
+            <td>50</td>
+            <td>40</td>
+        </tr>
+
+    </tbody>
+</table> <br> <br> <br> <br> <br>
+
+<!-- Colocamos a tag <colgroup></colgroup>, dentro colocamos 3 <col>, 
+            onde na segunda colocamos o atributo style="background-color: blueviolet" e 
+            na terceira style="background-color: blue", porém está desorganizado -->
+
+<table>
+
+    <caption>Produtos Produzidos x Vendidos por loja</caption>
+
+    <colgroup>
+        <col>
+        <col style="background-color: blueviolet;">
+        <col style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Loja A</th>
+            <th colspan="2">Loja B</th>
+        </tr>
+
+        <tr>
+            <th>Produzido</th>
+            <th>Vendido</th>
+            <th>Produzido</th>
+            <th>Vendido</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Vassoura</th>
+            <td>50</td>
+            <td>40</td>
+            <td>60</td>
+            <td>50</td>
+        </tr>
+
+        <tr>
+            <th>Balde</th>
+            <td>30</td>
+            <td>25</td>
+            <td>50</td>
+            <td>40</td>
+        </tr>
+
+    </tbody>
+</table> <br> <br> <br> <br> <br>
+
+
+<!--  Colocaremos span="2" para alinharmos a cor com a coluna. -->
+
+<table>
+
+    <caption>Produtos Produzidos x Vendidos por loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: blueviolet;">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Loja A</th>
+            <th colspan="2">Loja B</th>
+        </tr>
+
+        <tr>
+            <th>Produzido</th>
+            <th>Vendido</th>
+            <th>Produzido</th>
+            <th>Vendido</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Vassoura</th>
+            <td>50</td>
+            <td>40</td>
+            <td>60</td>
+            <td>50</td>
+        </tr>
+
+        <tr>
+            <th>Balde</th>
+            <td>30</td>
+            <td>25</td>
+            <td>50</td>
+            <td>40</td>
+        </tr>
+
+    </tbody>
+</table>

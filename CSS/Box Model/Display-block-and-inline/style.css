@@ -1,0 +1,40 @@
+.nativeBlock {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+
+  margin: 25px;
+
+  border: 1px solid red;
+}
+
+.nativeInline {
+  width: 100px;
+  border: 1px solid green;
+
+  margin: 0 15px;
+}
+
+/*ALTERANDO O DISPLAY*/
+
+.changeBlock {
+  width: 100px;
+  padding: 10px;
+
+  margin: 25px;
+
+  border: 1px solid red;
+
+  display: inline;
+}
+
+.changeInline {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid green;
+
+  margin: 30px;
+
+  display: block;
+}

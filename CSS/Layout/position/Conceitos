@@ -1,0 +1,22 @@
+A propriedade "position" define como um elemento pode ser posicionado (renderizado) no documento (página)
+e pode vir acompanhado de outras quatro propriedades:  top, right, bottom, left.
+
+- Tipos de posicionamento
+    - static
+    - fixed
+    - sticky (top, right, bottom, left)
+    - relative (top, right, bottom, left)
+    - absolute (top, right, bottom, left)
+
+- Entendo o comportamento dos tipos de posicionamento
+    - Static: Por padrão os elementos já possuem esse tipo de posicionamento, ou seja, onde for determinado para que o elemento fique, ele ficará.
+    
+    - Fixed: Permite que deixe o elemento fixado em alguma parte da página independe do scroll(rolagem da página).
+
+    - Sticky: Ele funciona conforme o valor determinado de limite em uma das propriedade (top, right, bottom, left), ao  chegar nesse limite ele "cola" na tela e fica com o comportamento semelhante ao do "fixed". 
+    
+        Exemplo, ao indicar o posicionamento como "sticky" e adicionar uma propriedade de "top= 0px", quando movimento o página (rolar a página) e o topo dela chega a 0px, o elemento que determinei com este posicionamento fica fixo desse limite em diante.  
+
+    - Relative: Este posicionamento irá alterar conforme propriedades (top, right, bottom, left) em relação a posição original do elemento, sem que outros elementos sejam alterados.
+
+    - Absolute: É um posicionamento que pode seguir uma hierarquia (pai e filho), pois ele será absoluto em relação a sua tag pai, será criada uma camada em cima da que se encontra a tag pai, essa nova camada é onde o elemento ficará. Essa relação só será aplicada apenas se a tag pai possuir um "position relative" e toda alteração usando as propriedades (top, right, bottom, left) será feita em relação a tag pai. Caso a tag pai não possua "position relative", o elemento será absoluto em relação a página.

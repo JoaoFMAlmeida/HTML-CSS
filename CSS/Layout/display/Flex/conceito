@@ -1,0 +1,61 @@
+ * Foi projetado como um modelo de layout unidimensional e como um método 
+ que pode oferecer distribuição de espaço entre itens em uma interface e 
+ recursos de alinhamento.
+ 
+
+ * "Display: flex" => Torna a tag um elemento do tipo flex, e assim
+ automaticamente todos os seus filhos diretos desta tag, tornam-se flex items.
+
+    ## PROPRIEDADES DO CSS
+
+        1) flex-direction: Propriedade que permite escolher qual o eixo principal será flex ("X" ou "Y") e a direção (Normal ou invertido) dos itens flex.
+
+            * row = O eixo principal é o "X", tendo os pontos de início e término principais iguais à direção do conteúdo;
+
+            * row-reverse = Mesma coisa do row, inverte a posição dos itens;
+
+            * column = O eixo principal é o "Y";
+
+            * colum-reverse = Mesmo funcionamento do "column", inverte a posição dos itens
+
+
+        2) flex-wrap: É a propriedade que define se os itens devem ou não quebrar a linha.
+        
+            * Por padrão eles não quebram linhas, isso faz com que os flex itens sejam compactados além do limite do conteúdo.
+
+        4) row-gap: Define o espaço apenas entre as linhas do container pai;
+
+        5) column-gap: Define o espaço apenas entre as colunas do container pai; 
+
+        3) gap: É o  shorthand do row-gap e column-gap. 
+
+    ## PROPRIEDADES DE ALINHAMENTO
+
+        1) justify-content: Define a posição e o espaço entre os containers dos itens ao longo do espaço determinado no eixo principal.
+
+            > Posição
+                * start: Se posicionam no início do container.
+                * end: Se posicionam no final do container.
+                * center: ao centro do container.
+
+            > Espaço entre itens
+                * space-between: cria um espaçamento igual entre os elementos.
+                
+                * space-around: os espaçamentos do meio são duas vezes maiores que o inicial e final.
+
+        
+        2) align-content: Estabelece o alinhamento dos containers filhos dentro do container pai.
+
+            * space-between: O primeiro item está alinhado com a borda inicial do contêiner pai e o último item está alinhado com a borda final do contêiner pai.
+
+            * space-around: O espaço vazio antes do primeiro e depois do último item é igual a metade do espaço entre cada par de itens adjacentes.
+
+            * space-evenly: O espaçamento entre cada par de itens adjacentes, a borda inicial do container pai e o primeiro item, e a borda final do container pai e o último item, são exatamente iguais.
+
+        
+        3) align-items: Estabelece o alinhamento do item dentro do seu próprio container que o contém.
+
+            * center: alinhamento dos itens ao centro;
+            * stretch: padrão, e os flex itens cresçam igualmente;
+            * flex-start: alinhamento dos itens no início;
+            * flex-end: alinhamento dos itens no final.

@@ -1,0 +1,66 @@
+<table>
+    <!--Tag para criar tabelas-->
+
+    <caption> Título da tabela </caption>
+    <!--Tag usada para descrever do que a tabela trata-->
+
+    <tr>
+        <!--Tag "<tr></tr>" (table row) serve para criar as linhas da tabela.-->
+        <th> Nome:</th>
+        <th> Email:</th>
+        <th> Telefone:</th>
+        <th> Cargo:</th>
+        <!-- A tag "<th>" é usado para determinar títulos/tópicos/categorias de cada coluna.-->
+    </tr>
+
+    <tr>
+        <!--A tag "td" é usada para colocar conteúdo/dados na tabela.-->
+        <td> João </td>
+        <td> joaoalmeidapps@hotmail.com </td>
+        <td> 81988441898 </td>
+        <td rowspan="2"> Desenvolvedor Web </td>
+        <!-- A tag "<td rowspan>" é usada para a informação ocupar mais de 1 linha. -->
+    </tr>
+
+    <tr>
+        <td colspan="3"> Total: 1</td> <!-- A tag "<td colspan>" é usada para a informação ocupar mais de uma coluna.-->
+    </tr>
+
+    <colgroup>
+        <!--Uso a tag <colgroup></colgroup> para colocar os tópicos em classe e assim poder formatar o estilo de cada coluna separadamente-->
+        <col class="nome">
+        <col class="email">
+        <col class="telefone">
+        <col class="cargo">
+    </colgroup>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        th,
+        td {
+            padding: 7px;
+        }
+
+        .nome {
+            background-color: aqua;
+        }
+
+        .email {
+            background-color: burlywood;
+        }
+
+        .telefone {
+            background-color: coral;
+        }
+
+        .cargo {
+            background-color: darkgrey;
+        }
+    </style>
+
+</table>

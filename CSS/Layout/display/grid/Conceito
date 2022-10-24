@@ -1,0 +1,16 @@
+# Display Grid
+
+* Posicionamento dos elementos dentro da caixa
+* Posicionamento vertical e horizontal ao mesmo tempo
+* Pode ser flexível ou fixo
+* Trabalha como uma tabela, colunas e linhas
+
+# Propriedades do Grid
+
+* grid-template-areas: É usado por meio de "" e ela representa uma linha criada, dentro dela será determinado a quantidade de colunas que terá o meu layout.
+* grid-template-columns: Define o tamanho que será as colunas criadas;
+* grid-template-rows: Define o tamanho das linhas criadas;
+
+    ## Determinar a área do elemento no Grid 
+    * grid-area: Uso para indicar qual área o elemento vai ocupar;
+    

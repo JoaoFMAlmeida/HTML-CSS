@@ -1,0 +1,32 @@
+
+As porcentagens são valores bem flexíveis.
+
+Em muitos casos é tratado da mesma maneira que as distâncias <length>.
+
+Sempre será relativo a algum valor ou tag pai.
+
+    Exemplo - Onde o meu primeiro grupo de <li> irá aplicar 80% do root, já o segundo grupo de <li> irá aplicar 80% dos 80% 
+    que foi aplicado no primeiro grupo. O terceiro grupo de <li>, irá aplicar 80% dos 80% aplicados no segundo grupo.
+
+        cód-html:
+
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three
+                    <ul>
+                        <li>Three A</li>
+                        <li>Three B</li>
+                        <ul>
+                            <li>Three B 2</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+
+
+        cód-css:
+
+            li {
+                font-size: 80%;
+            }

@@ -1,0 +1,59 @@
+## BACKGROUND
+
+    Quando queremos trabalhar ou agrupar todas as informações referente ao fundo do elemento que estamos manipulando, precisamos seguir uma ordem para que os comandos possam ser lidos e entendidos.
+
+    1 "background-color = red" - Cor de fundo da caixa.
+
+    
+    Background com imagem:
+    
+        2 "background-image = url()" - Se for ter uma imagem como plano de fundo.
+
+        3 "background-repeat" = " - Se a imagem vai se repetir ou não(no-repeat).
+            Comandos:
+                repeat-x = Repetir apenas na horizontal; 
+                repeat-y = Repetir apenas na vertical; 
+                repeat = Repetir em todos os eixos
+
+        4 "background-position = " - Posição da imagem(Center,left, right)
+        
+        5 "background-size = " - Tamanho do background
+        
+            Valores:
+            * contain = Ajusta para que fique dentro da caixa;
+            * cover = Ocupar toda a caixa;
+            * Porcentagem = Se coloco apenas 1 valor, esse valor vai ficar para a horizontal e a altura ficará automática; Se determinar 2 valores, o 1º será para largura e o 2º para altura.
+            * em, px
+
+        6 "background-origin = " - Define a área de posicionamento do plano de fundo, isto é, a ponto de origem da imagem
+            
+            Valores:
+            * border-box: Inicia na borda da caixa;
+            * content-box: Inicia a partir do conteúdo da caixa;
+            * padding-box: Se a caixa tiver um padding, essa opção fará com que meu background comece do padding.
+        
+    7 - "background-clip = " - Especifica se o fundo de um elemento, seja cor ou imagem, se estende para debaixo de sua área de borda, padding ou conteúdo. Ele difere do "origin", pois conseguimos manipular todo o fundo da caixa e não apenas um elemento dela.
+        
+
+    8 "background-attachment = " - Posso definir o comportamento do meu papel de fundo quando movimentar a página para cima ou para baixo.
+        
+        Valores:
+        * fixed: O background é fixo em relação ao viewport. Mesmo que um elemento tenha um mecanismo de rolar, o  background ‘fixed’ não movimenta com o elemento;
+        * local: O background rola com o conteúdo do elemento, e a área pintada e o posicionamento do background são relativos à área de rolagem do elemento ao invés da borda de fronteira deles;
+        * scroll: O background é fixo em relação ao elemento em si e não rola com seu conteúdo.
+
+
+## SHORTHAND
+
+    Posso agrupar todas as características acima em um único comando usando a propriedade "background" no CSS.
+
+
+## GRADIENTES
+
+    "background: linear-gradient()" - É a função usada para criar gradient linear com o CSS.
+    
+    "background: radial-gradient()" - É a função usada para criar gradient circular.
+
+## Múltiplos Backgrounds
+
+    Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.

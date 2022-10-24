@@ -1,0 +1,16 @@
+#content {
+  color: black;
+  background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg);
+  background-attachment: fixed;
+}
+
+#content #new-div {
+  background-image: url(https://www.adobe.com/express/create/media_1ff27df8a32848f6ca9d248c89fbd476c339135bc.png?width=2000&format=webply&optimize=medium);
+  background-size: unset;
+  background-repeat: repeat-y;
+}
+
+/*Aplicando Background sem uso de DIV para agrupar*/
+.text-green {
+  background-color: green;
+}

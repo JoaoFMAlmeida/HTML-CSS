@@ -1,0 +1,47 @@
+/* main{ 
+    color: white;
+
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.rocketseat.com.br/icons/icon-512x512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: border-box;
+    background-clip: content-box;
+    background-attachment: scroll;
+} */
+
+
+/* USANDO O SHORTHAND */
+main{
+    color: white;
+    
+    background: rgb(55, 100, 50) url(https://www.rocketseat.com.br/icons/icon-512x512.png) no-repeat right top / 100px border-box  
+    border-box scroll;
+}
+
+/* GRADIENTE */
+
+.titleRadial, .titleCircular {
+    text-align: center;
+}
+
+.radial{
+    background: linear-gradient(45deg, red, yellow)
+}
+
+.circular{
+    background: radial-gradient(green, red, yellow)
+}
+
+/* VÁRIOS BACKGROUND EM UM SÓ */
+
+.title{
+    text-align: center;
+}
+
+.multiplesBackgrounds{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.185), rgba(255, 0, 0, 0.466)), 
+    rgb(55, 100, 50) url(https://www.rocketseat.com.br/icons/icon-512x512.png) no-repeat right top / 100px border-box  
+    border-box scroll;
+}

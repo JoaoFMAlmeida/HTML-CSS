@@ -1,0 +1,19 @@
+## SVG
+- É uma marcação, estilo HTML, mas é para texto e sim para imagens.
+
+- Imagem rasterizada x Imagem vetorial
+    - Rasterizada: Formada por pixels, quando é ampliada perde sua nitidez e começamos a ver os pixels.
+    - Vetorial: É formada por algoritmos.
+
+- Benefícios
+    - Mais leve
+    - Mais detalhes
+    - Maior acessibilidade e SEO (Search Engine Optimization)
+    - Pode ser editada via CSS ou atributos
+
+- Desvantagens
+    - Pode ser mais complicado de trabalhar
+    - Quanto mais complexa a imagem for, mais trabalho o navegador terá para mostrar
+    - Navegadores mais antigos não possuem suporte
+
+Para fotografias, ainda prefira usar imagens rasterizadas.

@@ -1,0 +1,75 @@
+<!-- 
+    
+    <video>
+
+    - src
+    - source
+        - src
+        - type
+    
+    Propriedades [Depende do navegador para funcionar ou não]
+        
+        - controls (Mostrar os controles de pausa/play)
+        
+        - width (Largura da caixa de vídeo)
+        
+        - height (Altura da caixa de vídeo)
+        
+        - autoplay (Já começa tocando o video)
+        
+        - preload 
+            * auto: (Se necessário, o vídeo inteiro pode ser baixado, mesmo que não seja esperado a execução.)
+            * metadata: (indica que embora o usuário não necessitará consultar o vídeo, pegar os meta-dados, 
+                         por exemplo o comprimento, pode ser interessante.)
+            * none: (Indica que o vídeo não deve ser pré-carregado.)
+
+        - loop (Ao terminar, começa a rodar o vídeo novamente e automaticamente)
+        
+        - muted (Se o vídeo começa sem áudio)
+        
+        - poster (Permite colocar uma imagem da fundo na tela do vídeo antes dele começar a rodar)
+
+    Se o vídeo não funcionar ?
+        - fallback content {Construir um conteúdo que indique a falha e deixe uma opção para baixar o vídeo}
+ -->
+
+<video controls width="400" height="200" loop muted poster="./Assets/poster.jpg">
+    <source src="./Assets/_rocket.mp4" type="video/mp4">
+    Desculpe, o seu navegador não suporta vídeo incorporados, mas você
+    pode <a href="">Baixá-lo!</a>
+</video> <br> <br>
+
+
+
+<!-- 
+    <audio>
+
+    - src
+    - source
+        - src
+        - type
+    
+    Propriedades [Depende do navegador para funcionar ou não]
+        
+        - controls (Mostrar os controles de pausa/play)
+        
+        - autoplay (Já começa tocando o video)
+        
+        - preload 
+            * auto: (Se necessário, o vídeo inteiro pode ser baixado, mesmo que não seja esperado a execução.)
+            * metadata: (indica que embora o usuário não necessitará consultar o vídeo, pegar os meta-dados, 
+                         por exemplo o comprimento, pode ser interessante.)
+            * none: (Indica que o vídeo não deve ser pré-carregado.)
+
+        - loop (Ao terminar, começa a rodar o vídeo novamente e automaticamente)
+        
+        - muted (Se o vídeo começa sem áudio)
+
+    Se o vídeo não funcionar ?
+        - fallback content {Construir um conteúdo que indique a falha e deixe uma opção para baixar o vídeo}
+ -->
+
+<audio controls loop>
+    <source src=".//Assets/viper.mp3" type="audio/mp3">
+    O seu navegador não suporta o elemento audio.
+</audio>

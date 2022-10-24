@@ -1,0 +1,84 @@
+<!--ANOTAÇÕES SOBRE FORMULÁRIO-->
+
+    <!--"Get" envia e mostra os dados por url.
+        Post envia os dados sem que o cliente veja-->
+
+<!--ATRIBUTOS NAS TAGS input-->
+    
+    <!--Adicionando "required" na tag input o campo fica obrigatório-->
+
+    <!--Colocando "autofocus" na tag input, o campo fica em destaque                
+        ao abrir a página-->
+
+    <!--Usando o "disabled" na tag input podemos desabilitar o campo-->
+
+    <!--"maxlength" serve para determinar o número máximo de 
+        caracteres que podem ser usados no campo-->
+
+    <!--"autocomplete" é a função de ajudar a completar o campo
+        que está sendo preenchido-->
+
+    <!--"placeholder" permite colocar algum texto dentro do campo-->
+
+    <!--Uso "checked" na tag input de escolhas para determinar um padrão quando
+        a página for aberta -->
+
+    <!--"max" e "min" indicam até quanto posso escolher.
+        "step" é para determinar de quantos em quantos números
+        posso escolher-->           
+
+<h1>Formulário</h1>
+
+<form action="cadastro,js" method="POST">
+
+    <fieldset>
+        <legend> Indicação do formulário </legend> 
+                
+        <!--Preenchimento-->
+
+            Nome: <br>
+                <input type="text" name="nome" required autofocus autocomplete="on" placeholder="Nome"> <br><br>
+                 
+            Senha: <br>
+                <input type="password" name="senha" placeholder="Senha"> <br><br>
+
+            Email: <br>
+                <input type="email" name="email" required autocomplete="off" placeholder="Email"> <br><br>
+
+            Telefone: <br>
+                <input type="tel" name="Telefone"> <br> <br>
+
+        <!--Botão de enviar-->
+             <input type="submit" name="botão de enviar" value="Enviar"> <br><br>
+                 
+        <!--Escolhas-->
+            Escolhendo apenas uma opção: <br>
+                <input type="radio" name="Time" value="Sport">Sport<br>
+                <input type="radio" name="Time" value="Santa Cruz" checked>Santa Cruz<br>
+                <input type="radio" name="Time" value="Nautico">Nautico<br><br>
+
+            Escolhendo mais de uma opção: <br>
+                <input type="checkbox" name="Time" value="Sport" checked>Sport<br>
+                <input type="checkbox" name="Time" value="Santa">Santa<br>
+                <input type="checkbox" name="Time" value="Nautico">Nautico<br><br>
+
+            Escolhendo Cores: <br>
+                <input type="color" name="Cores"> <br> <br>
+
+            Definindo quantidade: <br>
+                <input type="number" name="quantidade" min="0" max="500" step="10"> <br> <br>
+                <input type="range" name="quantidade" min="0" max="500"> <br> <br>
+
+        <!--Outras opções para completar o formulário-->
+            Fazendo upload: <br><br>
+                <input type="file" name="Upload"> <br> <br>
+
+            URL: <br> <br>
+                <input type="url" name="sites"> <br> <br>
+
+            Pesquisa: <br> <br>
+                <input type="search" name="Pesquisa"> <br> 
+
+    </fieldset>
+            
+</form>

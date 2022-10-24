@@ -1,0 +1,23 @@
+                                                        MARGIN
+
+- Margin, é o espaço (margem) entre Elementos/Caixas
+
+- Podemos dividir o margin em 4 valores: "margin-top | margin-right | margin-bottom | margin-left" e esse valores podem ser determinados por values: "<length> | <percentage> | auto"
+
+- Geralmente usamos uma forma abreviada (shorthand) para escrever o margin. Esse formato segue o sentido horário iniciando pelo top, seguindo para right, bottom e left.
+
+  margin: 12px 16px 10px 4px; - [TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px]
+
+  margin: 12px 16px 0; - [TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px]
+
+  margin: 8px 16px; - [TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px]
+
+  margin: 8px; - [TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px]
+
+- O margin é aplicado em elementos com display block
+
+\*Cuidado com o margin collapsing que é quando o bottom da primeira caixa se junta ao top da segunda caixa, porém, eles se juntam sem somar os seus valores. Eles irão apenas unir, quase que uma substituição, pois o espaço da parte de baixo da primeira caixa e o espaço da parte de cima da segunda caixa ficarão com os mesmos valores.
+
+    Exemplo: Ao determinar 12px de margin bottom para uma caixa e 8px de margin top para a caixa que se encontra abaixo, o lógico seria ter um espaço de 20px entre elas, mas não, o espaço entre elas será de 12px.
+
+    Obs: Se eu colocar um valor maior, independente de ser na caixa de cima(margin-bottom) ou na caixa de baixo(margin-top), o navegador vai pegar o maior valor e usar de referência.

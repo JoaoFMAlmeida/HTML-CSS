@@ -1,0 +1,40 @@
+                                                        BORDER
+
+- São os espaçamentos externos da caixa
+
+- A propriedade "border" possui 3 características, são: "<border-style> | <border-width> | <border-color>".
+
+    |------------------------------------|---------------------------------------|--------------------------------------|
+    |               Style                |                  Widht                |                Color                 |
+    |------------------------------------|---------------------------------------|--------------------------------------|
+    | Define o estilo da borda. O padrão | Define a espessura da borda. O padrão | Define a cor da borda de um elemento |
+    | é none se ausente.                 | é "medium" se ausente.                |                                      |
+    |------------------------------------|---------------------------------------|--------------------------------------|
+    |   solid, dotted, dashed, double,   |  px, em, rem, medium, thick, thin,    | hexadecimal(#32a1ce), rgb(), rgba(), |
+    |   groove, ridge, inset, outset     |  revert, inherit, unset               | "nome da cor"                        | 
+    |------------------------------------|---------------------------------------|--------------------------------------|  
+    
+
+- Existem algumas formas de determinar a borda, seja por (border-característica-posição:""), por aplicação de pelo menos 
+duas característica na mesma linha ou da inclusão de todas as características numa única linha. *Lembrando que a borda ficará invisível 
+se seu ESTILO não estiver definido. Isso ocorre porque o estilo padrão é none.
+    
+    Determinando características:
+        |------------------------|--------------------------------|----------------------------|----------------------------------|       
+        |        (style)         |         (width, style)         |       (style, color)       | shorthand-(width, style, color)  |
+	    |------------------------|--------------------------------|----------------------------|----------------------------------|
+        |     border: solid;     |       border: 2px dotted;      |     border: outset #f33;   |    border: medium dashed #f33;   |
+        |------------------------|--------------------------------|----------------------------|----------------------------------|
+        |                           SHORTHAND SIMPLES - modificar apenas uma região da borda                                      |
+        |-------------------------------------------------------------------------------------------------------------------------|
+        |                                     [border-top: solid 2px green;]                                                      | 
+        |-------------------------------------------------------------------------------------------------------------------------|
+
+* Se precisar colocar mais de 1 estilo, cor e/ou tamanho, basta colocar na linha do shorthand o valor a mais
+    [border: medium solid groove red green;]
+
+    | 1 Característica  |    2 Características iguais  |  3 Características iguais  |   4 Características iguais  |
+    |-------------------|------------------------------|----------------------------|-----------------------------|
+    | top, bottom, left |      1º(top e bottom)        |  1º(top) 2º(left e right)  |   1º(top) 2º(right)         |
+    | right             |      2º(left e right)        |  3º(bottom)                |   3º(bottom) 4º(left)       |
+    |-------------------|------------------------------|----------------------------|-----------------------------|

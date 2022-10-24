@@ -1,0 +1,16 @@
+.example {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 3%;
+  padding: 0 20px;
+}
+
+.examples {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 3%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

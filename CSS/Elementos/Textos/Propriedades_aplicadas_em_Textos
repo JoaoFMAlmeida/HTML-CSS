@@ -1,0 +1,194 @@
+
+# Trabalhando com fontes
+    
+    A tipografia é usada para transmitir uma mensagem
+        - Dependendo do TAMANHO
+        - Dependendo do ESTILO
+        - Do formato (Negrito, itálico)
+
+## Propriedades básicas
+   * font-family
+   * font-weight
+   * font-style
+   * font-size
+-------------------------------------------------------------------------------------------------------------------
+
+## Font Family
+
+   * Tipo de fonte de um elemento
+   * Lista de fontes e ordem de prioridade
+   * inclui fallback font (Segunda opção caso a primeira não funcione)
+
+
+    ### Fallback
+      - Serif: Indica que deve colocar uma fonte mais elaborada com acabamentos mais desenhados;
+      - sans-serif: Indica que deve colocar uma fonte com acabamento e linhas mais simples;
+
+```css
+p{
+    font-family: "Times New Roman", serif;
+}
+```
+-------------------------------------------------------------------------------------------------------------------
+
+## Font Weight 
+
+* Define o peso (ou negrito) da fonte;
+
+* Valores de peso para fontes: (normal = 400 | bold = 700 | bolder = Um peso de fonte relativo mais pesado que o elemento pai. | lighter = Um peso de fonte relativo mais leve que o elemento pai.) ou 
+(100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900);  
+
+* Dependendo da família da fonte não conseguimos utilizar todos os pesos de fonte.
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Font Style
+
+* É o estilo da fonte
+* Valores: normal | italic | oblique
+* Os valores que podem ser aplicados dependem da fonte usada
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Font Size
+
+* Tamanho da fonte
+* Valores: (px, rem, em)
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Web Fonts
+
+   ### Fontes do sistema x Fontes da web
+   - Fontes do sistema são as fontes que estão instaladas na máquina do usuário e nem sempre o cliente vai ter instalado as fontes usadas no projeto e isso pode fazer com que os estilos dos textos não sejam aplicados corretamente, mas para resolver esses casos podemos preparar nossas fonts para web ou usar fontes da web.
+
+   * Como usar fontes para web?
+    - @font-face
+    - @import
+    - link
+
+|-----------------------------------------------------------------------------------------------------------------|
+|                                                                                                                 |
+|                                    APROFUNDAMENTO SOBRE OS TEXTOS NO CSS                                        |
+|                                                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------|
+
+
+## Font Variant
+
+* Permite fazer variações na apresentação da fonte
+
+   ### Tipos de fontes Variantes
+    * font-variant-alternates
+    * font-variant-caps
+    * font-variant-east-asian
+    * font-variant-ligatures
+    * font-variant-numeric
+
+```css
+p{
+    font-variant: small-caps;
+}
+```
+-------------------------------------------------------------------------------------------------------------------
+
+## Font Stretch
+
+* Alargamento ou encolhimento da fonte
+* Aceita palavras-chaves como: (expanded, condensed, normal)
+* Aceita porcentagens de 50% a 200%
+* Essa propriedade não vai funcionar em todas as fontes
+
+```css
+p{
+    font-stretch: expanded;
+}
+```
+--------------------------------------------------------------------------------------------------------------------
+
+## Letter spacing
+
+* Define o espaçamento entre os caracteres
+
+
+## Word spacing
+
+* Define o espaçamento entre palavras
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Line height
+
+* Define os espaços entre linhas
+* Pode ser com unidades ou sem unidades de medida
+* Valores comuns: 1.5 ou 2
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Text align
+
+* Alinhamento de um texto
+
+* Valores: start | end | left | right | center | justify | match-parent
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Text transform
+
+* Transformação do texto
+
+* Valores podem ser: 
+  - none: (Não altera nada.)
+  - capitalize: (converte a primeira letra de cada palavra em maiúscula.) 
+  - uppercase: (Converte todos os caracteres em maiúsculas.) 
+  - lowercase: (converte todos os caracteres em minúsculas.)  
+  - full-width:  
+  - full-size-kana:
+
+
+* Grandes seções de texto definidas com um text-transform valor de "uppercase" podem ser difíceis de ler para pessoas com preocupações cognitivas, como a dislexia.
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Text decoration
+
+* Aparência decorativa de um texto
+
+* Valores:
+  - text-decoration-line: underline | overline | line-through (podemos aplicar mais de 1 valor)
+  - text-decoration-style: wavy | dotted | double | dashed | solid
+  - text-decoration-color: <color> values
+
+* Shorthand
+```css
+p{
+    text-decoration: wavy overline blue;
+}
+```
+--------------------------------------------------------------------------------------------------------------------
+
+## Text shadow
+
+* Sombra aplicada a um texto
+
+* Permite múltiplos valores na seguinte ordem: (offset-x | offset-y | blur-radius | color )
+
+```css
+p{
+    text-shadow: 1px 1px 1px red,
+	             2px 2px 1px green; 
+    /* offset-x | offset-y | blur-radius | color */
+}
+```
+
+|-----------------------------------------------------------------------------------------------------------------|
+|                                    SHORTHAND DE TODAS AS PROPRIEDADES PARA TEXTO                                |
+|-----------------------------------------------------------------------------------------------------------------|
+
+* Podemos usar o shorthand font para determinar os seguintes valores: font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
+
+```css
+p{ /*  font-style font-variant font-weight font-stretch font-size/line-height font-family */
+    font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+}
+```
